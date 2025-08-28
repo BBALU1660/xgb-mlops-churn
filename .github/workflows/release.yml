@@ -1,0 +1,41 @@
+﻿name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # allow creating GitHub Releases with GITHUB_TOKEN
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest
+
+      - name: Run tests
+        run: pytest -q
+
+      # Package a small source zip for the release assets
+      - name: Create source archive
+        run: |
+          zip -r xgb-mlops-churn-source.zip \
+            src tests README.md requirements.txt Dockerfile .github \
+            client.py || true
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: xgb-mlops-churn-source.zip
+          generate_release_notes: true
