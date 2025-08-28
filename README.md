@@ -1,7 +1,8 @@
 
 ## XGB-MLOps Churn
 
-**CI:** (add after first push)
+CI: [![CI](https://github.com/BBALU1660/xgb-mlops-churn/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/BBALU1660/xgb-mlops-churn/actions/workflows/ci.yml)
+
 
 ## What is this project?
 
