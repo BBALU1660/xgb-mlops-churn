@@ -1,0 +1,23 @@
+# venv
+.venv/
+
+# python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# data & artifacts
+data/
+artifacts/
+mlruns/
+
+# env vars
+.env

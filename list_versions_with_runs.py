@@ -1,0 +1,10 @@
+﻿from mlflow import MlflowClient
+import os
+
+c = MlflowClient(tracking_uri=os.getenv("MLFLOW_TRACKING_URI","http://127.0.0.1:5000"))
+versions = sorted(c.search_model_versions("name='xgb_churn'"), key=lambda v: int(v.version))
+
+for v in versions:
+    run = c.get_run(v.run_id)
+    print(f"v{v.version:>2}  stage={v.current_stage:<10}  run_id={v.run_id}  "
+          f"artifact_uri={run.info.artifact_uri}")
