@@ -172,28 +172,18 @@ On GitHub, a basic CI (see `.github/workflows/ci.yml`) installs deps and runs te
 
 ## Performance
 
-Typical ROC-AUC on a stratified holdout is around **0.84** for the default pipeline on this dataset.
-Use the scripts below to regenerate metrics & plots for your run and embed them in this README.
+**Summary:** see [`docs/perf_summary.md`](docs/perf_summary.md)
 
-### Plots (saved to `docs/images/`)
+### Curves
+![ROC](docs/images/roc_auc.png)
+![Precision–Recall](docs/images/pr_curve.png)
+![Calibration](docs/images/calibration_curve.png)
 
-- `docs/images/roc_auc.png` – ROC curve
-- `docs/images/pr_curve.png` – Precision-Recall curve
-- `docs/images/calibration_curve.png` – Calibration curve
-- `docs/images/feature_importance.png` – XGBoost feature importance (gain)
-- `docs/images/confusion_matrix.png` – Confusion matrix @ chosen threshold
+### Importance & Confusion
+![Feature importance](docs/images/feature_importance.png)
+![Confusion matrix](docs/images/confusion_matrix.png)
 
-We’ll add a one-click `report.py` to generate these (next step). Once generated, they’ll render here:
 
-| ROC-AUC | PR Curve | Calibration |
-|---------|----------|-------------|
-|         |          |             |
-
-| Feature Importance | Confusion Matrix |
-|--------------------|-----------------|
-|                    |                 |
-
----
 
 ## Notes & Troubleshooting
 
