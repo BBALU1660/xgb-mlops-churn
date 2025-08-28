@@ -32,19 +32,19 @@
 
 | 1 — MLflow **Experiments** list | 2 — **Model Version** view (stage actions) |
 |---|---|
-| [![1 – Experiments](docs/images/1.jpg)](docs/images/1.jpg) | [![2 – Version detail](docs/images/2.jpg)](docs/images/2.jpg) |
+| [![1 – Experiments](docs/images/1.jpeg)](docs/images/1.jpeg) | [![2 – Version detail](docs/images/2.jpeg)](docs/images/2.jpeg) |
 
 | 3 — **Registered Models** list | 4 — **Model registry: versions** for `xgb_churn` |
 |---|---|
-| [![3 – Registered models](docs/images/3.jpg)](docs/images/3.jpg) | [![4 – Versions table](docs/images/4.jpg)](docs/images/4.jpg) |
+| [![3 – Registered models](docs/images/3.jpeg)](docs/images/3.jpeg) | [![4 – Versions table](docs/images/4.jpeg)](docs/images/4.jpeg) |
 
 | 5 — **Run metrics**: AUC chart | 6 — **Run metrics & parameters** table |
 |---|---|
-| [![5 – AUC chart](docs/images/5.jpg)](docs/images/5.jpg) | [![6 – Metrics & params](docs/images/6.jpg)](docs/images/6.jpg) |
+| [![5 – AUC chart](docs/images/5.jpeg)](docs/images/5.jpeg) | [![6 – Metrics & params](docs/images/6.jpeg)](docs/images/6.jpeg) |
 
 | 7 — **Run overview** (links to registered model) | 8 — **Experiment runs** table (`xgb_churn_experiment_http`) |
 |---|---|
-| [![7 – Run overview](docs/images/7.jpg)](docs/images/7.jpg) | [![8 – Runs table](docs/images/8.jpg)](docs/images/8.jpg) |
+| [![7 – Run overview](docs/images/7.jpeg)](docs/images/7.jpeg) | [![8 – Runs table](docs/images/8.jpeg)](docs/images/8.jpeg) |
 
 ---
 
