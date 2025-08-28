@@ -1,0 +1,15 @@
+{
+  "auc": 0.839953,
+  "average_precision": 0.656239,
+  "best_threshold": 0.43,
+  "confusion_matrix": [
+    [
+      882,
+      151
+    ],
+    [
+      132,
+      242
+    ]
+  ]
+}
