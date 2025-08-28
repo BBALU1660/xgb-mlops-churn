@@ -1,23 +1,22 @@
-# venv
+﻿# venv & caches
 .venv/
-
-# python
 __pycache__/
-*.py[cod]
-*.pyo
-*.pyd
+*.pyc
 .pytest_cache/
-
-# OS/editor
-.DS_Store
-Thumbs.db
+# editors
 .vscode/
 .idea/
-
-# data & artifacts
-data/
-artifacts/
+# local MLflow + DBs/artifacts
 mlruns/
-
-# env vars
+mlflow.db
+*.db
+*.sqlite
+# dist/build
+dist/
+build/
+# OS junk
+.DS_Store
+Thumbs.db
+# env files
 .env
+.env.*
