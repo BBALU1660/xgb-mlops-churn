@@ -30,21 +30,21 @@
 
 ## UI screenshots
 
-Add your screenshots to `docs/images/` and they’ll render here:
+| 1 — MLflow **Experiments** list | 2 — **Model Version** view (stage actions) |
+|---|---|
+| [![1 – Experiments](docs/images/1.jpg)](docs/images/1.jpg) | [![2 – Version detail](docs/images/2.jpg)](docs/images/2.jpg) |
 
-**MLflow UI – Run & Artifacts**
+| 3 — **Registered Models** list | 4 — **Model registry: versions** for `xgb_churn` |
+|---|---|
+| [![3 – Registered models](docs/images/3.jpg)](docs/images/3.jpg) | [![4 – Versions table](docs/images/4.jpg)](docs/images/4.jpg) |
 
-<!-- ![MLflow UI](docs/images/mlflow_ui.png) -->
+| 5 — **Run metrics**: AUC chart | 6 — **Run metrics & parameters** table |
+|---|---|
+| [![5 – AUC chart](docs/images/5.jpg)](docs/images/5.jpg) | [![6 – Metrics & params](docs/images/6.jpg)](docs/images/6.jpg) |
 
-**Model Registry – Promotion to Production**
-
-<!-- ![Model Registry](docs/images/model_registry.png) -->
-
-**API – /docs (Swagger) & /health**
-
-<!-- ![API Docs](docs/images/api_docs.png) -->
-
-*Tip: Take these after your first successful train & serve. Filenames are placeholders—keep them or rename in the markdown.*
+| 7 — **Run overview** (links to registered model) | 8 — **Experiment runs** table (`xgb_churn_experiment_http`) |
+|---|---|
+| [![7 – Run overview](docs/images/7.jpg)](docs/images/7.jpg) | [![8 – Runs table](docs/images/8.jpg)](docs/images/8.jpg) |
 
 ---
 
