@@ -24,3 +24,9 @@ python -m mlflow server `
 .\.venv\Scripts\activate
 $env:MLFLOW_TRACKING_URI = "http://127.0.0.1:5000"
 python .\src\train.py
+## Status
+- CI: ![CI](https://img.shields.io/github/actions/workflow/status/BBALU1660/xgb-mlops-churn/ci.yml?branch=main)
+- Release: push a tag like `v0.1.0` to cut a release
+
+## Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md).
